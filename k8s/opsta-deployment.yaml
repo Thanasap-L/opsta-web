@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: opsta-dev-web
-  namespace: student[X]-opsta-dev
+  namespace: student31-opsta-dev
   labels:
     app: opsta-dev-web
 spec:
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: opsta-dev-web
-        image: ghcr.io/[GITHUB_USER]/opsta-web:dev
+        image: ghcr.io/thanasap-l/opsta-web:dev
         imagePullPolicy: Always
         ports:
         - containerPort: 80
